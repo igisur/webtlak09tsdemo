@@ -1,6 +1,6 @@
 # WEBtlak # 09 TypeScript demo project
 
-https://travis-ci.org/igisur/webtlak09tsdemo.svg?branch=master
+[![Build Status](https://travis-ci.org/igisur/webtlak09tsdemo.svg?branch=master)](https://travis-ci.org/igisur/webtlak09tsdemo)
 
 - Gulp as task manager, dedicated `buildSrc` for building TypeScript files in src folder. 
 - Task `buildTests` for building just tests. 
