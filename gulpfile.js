@@ -4,6 +4,7 @@ var tsb = require('gulp-tsb');
 var istanbul = require('gulp-istanbul');
 var typedoc = require("gulp-typedoc");
 var tslint = require("gulp-tslint");
+var tslintReporter = require('gulp-tslint-jenkins-reporter');
 var args = require('yargs').argv;
 
 // build and run mocha tests in the ./tests folder
@@ -107,7 +108,13 @@ gulp.task("docuSrc", function() {
 gulp.task('tslint', function() {
     return gulp.src(['**/*.ts', '!**/*.d.ts', '!node_modules/**'])
         .pipe(tslint())
-        .pipe(tslint.report());
+         .pipe(tslintReporter({
+            sort: true,
+            filename: 'checkstyle.xml'
+//            severity: 'error',
+//            pathBase: '/project',
+//            pathPrefix: ''
+        }));
 });
 
 gulp.task('buildAll', ['buildSrc', 'buildTests']);
