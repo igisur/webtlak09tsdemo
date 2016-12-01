@@ -2,6 +2,7 @@ node_modules/
 docs/
 coverage/
 /test-report.xml
+/checkstyle.xml
 /src/*.js
 /src/*.js.map
 /tests/*.js
