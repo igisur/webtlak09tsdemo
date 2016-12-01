@@ -1,4 +1,4 @@
-# WEBtlak # 09 TypeScript demo project
+# WEBtlak # 09  Jenkins showcase - TypeScript project 
 
 [![Build Status](https://travis-ci.org/igisur/webtlak09tsdemo.svg?branch=master)](https://travis-ci.org/igisur/webtlak09tsdemo)
 
